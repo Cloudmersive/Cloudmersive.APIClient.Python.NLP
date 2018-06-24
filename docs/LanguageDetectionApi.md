@@ -22,8 +22,14 @@ import cloudmersive_nlp_api_client
 from cloudmersive_nlp_api_client.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: Apikey
+configuration = cloudmersive_nlp_api_client.Configuration()
+configuration.api_key['Apikey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Apikey'] = 'Bearer'
+
 # create an instance of the API class
-api_instance = cloudmersive_nlp_api_client.LanguageDetectionApi()
+api_instance = cloudmersive_nlp_api_client.LanguageDetectionApi(cloudmersive_nlp_api_client.ApiClient(configuration))
 text_to_detect = 'text_to_detect_example' # str | Text to detect language of
 
 try:
@@ -46,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Apikey](../README.md#Apikey)
 
 ### HTTP request headers
 

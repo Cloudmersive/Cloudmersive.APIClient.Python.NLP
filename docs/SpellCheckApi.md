@@ -27,8 +27,14 @@ import cloudmersive_nlp_api_client
 from cloudmersive_nlp_api_client.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: Apikey
+configuration = cloudmersive_nlp_api_client.Configuration()
+configuration.api_key['Apikey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Apikey'] = 'Bearer'
+
 # create an instance of the API class
-api_instance = cloudmersive_nlp_api_client.SpellCheckApi()
+api_instance = cloudmersive_nlp_api_client.SpellCheckApi(cloudmersive_nlp_api_client.ApiClient(configuration))
 value = 'value_example' # str | Input sentence
 
 try:
@@ -51,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Apikey](../README.md#Apikey)
 
 ### HTTP request headers
 
@@ -75,8 +81,14 @@ import cloudmersive_nlp_api_client
 from cloudmersive_nlp_api_client.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: Apikey
+configuration = cloudmersive_nlp_api_client.Configuration()
+configuration.api_key['Apikey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Apikey'] = 'Bearer'
+
 # create an instance of the API class
-api_instance = cloudmersive_nlp_api_client.SpellCheckApi()
+api_instance = cloudmersive_nlp_api_client.SpellCheckApi(cloudmersive_nlp_api_client.ApiClient(configuration))
 value = 'value_example' # str | Input sentence
 
 try:
@@ -99,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Apikey](../README.md#Apikey)
 
 ### HTTP request headers
 
@@ -123,8 +135,14 @@ import cloudmersive_nlp_api_client
 from cloudmersive_nlp_api_client.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: Apikey
+configuration = cloudmersive_nlp_api_client.Configuration()
+configuration.api_key['Apikey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Apikey'] = 'Bearer'
+
 # create an instance of the API class
-api_instance = cloudmersive_nlp_api_client.SpellCheckApi()
+api_instance = cloudmersive_nlp_api_client.SpellCheckApi(cloudmersive_nlp_api_client.ApiClient(configuration))
 value = 'value_example' # str | Input sentence word
 
 try:
@@ -147,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Apikey](../README.md#Apikey)
 
 ### HTTP request headers
 
@@ -171,8 +189,14 @@ import cloudmersive_nlp_api_client
 from cloudmersive_nlp_api_client.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: Apikey
+configuration = cloudmersive_nlp_api_client.Configuration()
+configuration.api_key['Apikey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Apikey'] = 'Bearer'
+
 # create an instance of the API class
-api_instance = cloudmersive_nlp_api_client.SpellCheckApi()
+api_instance = cloudmersive_nlp_api_client.SpellCheckApi(cloudmersive_nlp_api_client.ApiClient(configuration))
 value = 'value_example' # str | Input word
 
 try:
@@ -195,7 +219,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Apikey](../README.md#Apikey)
 
 ### HTTP request headers
 
@@ -219,8 +243,14 @@ import cloudmersive_nlp_api_client
 from cloudmersive_nlp_api_client.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: Apikey
+configuration = cloudmersive_nlp_api_client.Configuration()
+configuration.api_key['Apikey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Apikey'] = 'Bearer'
+
 # create an instance of the API class
-api_instance = cloudmersive_nlp_api_client.SpellCheckApi()
+api_instance = cloudmersive_nlp_api_client.SpellCheckApi(cloudmersive_nlp_api_client.ApiClient(configuration))
 value = 'value_example' # str | Input string
 
 try:
@@ -243,7 +273,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Apikey](../README.md#Apikey)
 
 ### HTTP request headers
 
@@ -267,8 +297,14 @@ import cloudmersive_nlp_api_client
 from cloudmersive_nlp_api_client.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: Apikey
+configuration = cloudmersive_nlp_api_client.Configuration()
+configuration.api_key['Apikey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Apikey'] = 'Bearer'
+
 # create an instance of the API class
-api_instance = cloudmersive_nlp_api_client.SpellCheckApi()
+api_instance = cloudmersive_nlp_api_client.SpellCheckApi(cloudmersive_nlp_api_client.ApiClient(configuration))
 value = 'value_example' # str | Input string word
 
 try:
@@ -291,7 +327,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Apikey](../README.md#Apikey)
 
 ### HTTP request headers
 

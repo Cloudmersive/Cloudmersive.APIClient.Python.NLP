@@ -114,7 +114,7 @@ class SpellCheckApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/spellcheck/check/word/json', 'POST',
@@ -213,7 +213,7 @@ class SpellCheckApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/spellcheck/check/sentence/json', 'POST',
@@ -312,7 +312,7 @@ class SpellCheckApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/spellcheck/check/sentence/string', 'POST',
@@ -411,7 +411,7 @@ class SpellCheckApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/spellcheck/correct/word/string', 'POST',
@@ -510,7 +510,7 @@ class SpellCheckApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/spellcheck/correct/word/json', 'POST',
@@ -609,7 +609,7 @@ class SpellCheckApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/spellcheck/check/word/string', 'POST',

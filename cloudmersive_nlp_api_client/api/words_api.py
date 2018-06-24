@@ -114,7 +114,7 @@ class WordsApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/get/words/adjectives/string', 'POST',
@@ -213,7 +213,7 @@ class WordsApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/get/words/adverbs/string', 'POST',
@@ -312,7 +312,7 @@ class WordsApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/get/words/json', 'POST',
@@ -411,7 +411,7 @@ class WordsApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/get/words/string', 'POST',
@@ -510,7 +510,7 @@ class WordsApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/get/words/nouns/string', 'POST',
@@ -609,7 +609,7 @@ class WordsApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/get/words/verbs/string', 'POST',
@@ -708,7 +708,7 @@ class WordsApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/get/words/pronouns/string', 'POST',
@@ -807,7 +807,7 @@ class WordsApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/get/words/properNouns/string', 'POST',

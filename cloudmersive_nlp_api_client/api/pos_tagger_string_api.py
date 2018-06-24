@@ -114,7 +114,7 @@ class PosTaggerStringApi(object):
             ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
             '/nlp/PosTaggerString', 'POST',
