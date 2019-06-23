@@ -93,6 +93,9 @@ class GetWordsJsonResponse(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(GetWordsJsonResponse, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

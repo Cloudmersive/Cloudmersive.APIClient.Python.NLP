@@ -175,6 +175,9 @@ class WordPosition(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(WordPosition, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

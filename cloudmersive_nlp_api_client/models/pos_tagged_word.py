@@ -119,6 +119,9 @@ class PosTaggedWord(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(PosTaggedWord, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

@@ -91,6 +91,9 @@ class CheckJsonResponse(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(CheckJsonResponse, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

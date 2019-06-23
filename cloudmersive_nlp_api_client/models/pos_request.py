@@ -91,6 +91,9 @@ class PosRequest(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(PosRequest, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

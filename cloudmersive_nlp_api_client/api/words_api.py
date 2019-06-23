@@ -38,18 +38,18 @@ class WordsApi(object):
 
         Retrieves all adjectives in input string  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_adjectives(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_adjectives(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.words_adjectives_with_http_info(input, **kwargs)  # noqa: E501
         else:
             (data) = self.words_adjectives_with_http_info(input, **kwargs)  # noqa: E501
@@ -60,11 +60,11 @@ class WordsApi(object):
 
         Retrieves all adjectives in input string  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_adjectives_with_http_info(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_adjectives_with_http_info(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
@@ -72,7 +72,7 @@ class WordsApi(object):
         """
 
         all_params = ['input']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -126,7 +126,7 @@ class WordsApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -137,18 +137,18 @@ class WordsApi(object):
 
         Returns all adverb words in the input string  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_adverbs(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_adverbs(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.words_adverbs_with_http_info(input, **kwargs)  # noqa: E501
         else:
             (data) = self.words_adverbs_with_http_info(input, **kwargs)  # noqa: E501
@@ -159,11 +159,11 @@ class WordsApi(object):
 
         Returns all adverb words in the input string  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_adverbs_with_http_info(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_adverbs_with_http_info(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
@@ -171,7 +171,7 @@ class WordsApi(object):
         """
 
         all_params = ['input']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -225,7 +225,7 @@ class WordsApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -236,18 +236,18 @@ class WordsApi(object):
 
         Get the component words in an input string, formatted as JSON  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_get_words_json(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_get_words_json(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: String to process (required)
         :return: GetWordsJsonResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.words_get_words_json_with_http_info(input, **kwargs)  # noqa: E501
         else:
             (data) = self.words_get_words_json_with_http_info(input, **kwargs)  # noqa: E501
@@ -258,11 +258,11 @@ class WordsApi(object):
 
         Get the component words in an input string, formatted as JSON  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_get_words_json_with_http_info(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_get_words_json_with_http_info(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: String to process (required)
         :return: GetWordsJsonResponse
                  If the method is called asynchronously,
@@ -270,7 +270,7 @@ class WordsApi(object):
         """
 
         all_params = ['input']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -324,7 +324,7 @@ class WordsApi(object):
             files=local_var_files,
             response_type='GetWordsJsonResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -335,18 +335,18 @@ class WordsApi(object):
 
         Segment an input string into its component words  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_get_words_string(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_get_words_string(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.words_get_words_string_with_http_info(input, **kwargs)  # noqa: E501
         else:
             (data) = self.words_get_words_string_with_http_info(input, **kwargs)  # noqa: E501
@@ -357,11 +357,11 @@ class WordsApi(object):
 
         Segment an input string into its component words  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_get_words_string_with_http_info(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_get_words_string_with_http_info(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
@@ -369,7 +369,7 @@ class WordsApi(object):
         """
 
         all_params = ['input']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -423,7 +423,7 @@ class WordsApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -434,18 +434,18 @@ class WordsApi(object):
 
         Returns all of the nouns in the input string  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_nouns(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_nouns(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.words_nouns_with_http_info(input, **kwargs)  # noqa: E501
         else:
             (data) = self.words_nouns_with_http_info(input, **kwargs)  # noqa: E501
@@ -456,11 +456,11 @@ class WordsApi(object):
 
         Returns all of the nouns in the input string  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_nouns_with_http_info(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_nouns_with_http_info(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
@@ -468,7 +468,7 @@ class WordsApi(object):
         """
 
         all_params = ['input']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -522,7 +522,7 @@ class WordsApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -533,18 +533,18 @@ class WordsApi(object):
 
         Get all of the verbs in the input string.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_post(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_post(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.words_post_with_http_info(input, **kwargs)  # noqa: E501
         else:
             (data) = self.words_post_with_http_info(input, **kwargs)  # noqa: E501
@@ -555,11 +555,11 @@ class WordsApi(object):
 
         Get all of the verbs in the input string.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_post_with_http_info(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_post_with_http_info(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
@@ -567,7 +567,7 @@ class WordsApi(object):
         """
 
         all_params = ['input']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -621,7 +621,7 @@ class WordsApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -632,18 +632,18 @@ class WordsApi(object):
 
         Returns all pronouns in the input string  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_pronouns(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_pronouns(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.words_pronouns_with_http_info(input, **kwargs)  # noqa: E501
         else:
             (data) = self.words_pronouns_with_http_info(input, **kwargs)  # noqa: E501
@@ -654,11 +654,11 @@ class WordsApi(object):
 
         Returns all pronouns in the input string  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_pronouns_with_http_info(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_pronouns_with_http_info(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
@@ -666,7 +666,7 @@ class WordsApi(object):
         """
 
         all_params = ['input']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -720,7 +720,7 @@ class WordsApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -731,18 +731,18 @@ class WordsApi(object):
 
         Returns all of the proper nouns in a string.  Proper nouns are named entities such as \"Hilton\".  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_proper_nouns(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_proper_nouns(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.words_proper_nouns_with_http_info(input, **kwargs)  # noqa: E501
         else:
             (data) = self.words_proper_nouns_with_http_info(input, **kwargs)  # noqa: E501
@@ -753,11 +753,11 @@ class WordsApi(object):
 
         Returns all of the proper nouns in a string.  Proper nouns are named entities such as \"Hilton\".  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.words_proper_nouns_with_http_info(input, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.words_proper_nouns_with_http_info(input, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str input: Input string (required)
         :return: str
                  If the method is called asynchronously,
@@ -765,7 +765,7 @@ class WordsApi(object):
         """
 
         all_params = ['input']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -819,7 +819,7 @@ class WordsApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),

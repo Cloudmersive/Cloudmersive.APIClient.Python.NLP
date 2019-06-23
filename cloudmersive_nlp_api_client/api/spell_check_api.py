@@ -38,18 +38,18 @@ class SpellCheckApi(object):
 
         Spell check a word as JSON  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_check_json(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_check_json(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input sentence (required)
         :return: CheckJsonResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.spell_check_check_json_with_http_info(value, **kwargs)  # noqa: E501
         else:
             (data) = self.spell_check_check_json_with_http_info(value, **kwargs)  # noqa: E501
@@ -60,11 +60,11 @@ class SpellCheckApi(object):
 
         Spell check a word as JSON  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_check_json_with_http_info(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_check_json_with_http_info(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input sentence (required)
         :return: CheckJsonResponse
                  If the method is called asynchronously,
@@ -72,7 +72,7 @@ class SpellCheckApi(object):
         """
 
         all_params = ['value']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -126,7 +126,7 @@ class SpellCheckApi(object):
             files=local_var_files,
             response_type='CheckJsonResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -137,18 +137,18 @@ class SpellCheckApi(object):
 
         Checks whether the sentence is spelled correctly and returns the result as JSON  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_check_sentence_json(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_check_sentence_json(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input sentence (required)
         :return: CheckSentenceJsonResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.spell_check_check_sentence_json_with_http_info(value, **kwargs)  # noqa: E501
         else:
             (data) = self.spell_check_check_sentence_json_with_http_info(value, **kwargs)  # noqa: E501
@@ -159,11 +159,11 @@ class SpellCheckApi(object):
 
         Checks whether the sentence is spelled correctly and returns the result as JSON  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_check_sentence_json_with_http_info(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_check_sentence_json_with_http_info(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input sentence (required)
         :return: CheckSentenceJsonResponse
                  If the method is called asynchronously,
@@ -171,7 +171,7 @@ class SpellCheckApi(object):
         """
 
         all_params = ['value']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -225,7 +225,7 @@ class SpellCheckApi(object):
             files=local_var_files,
             response_type='CheckSentenceJsonResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -236,18 +236,18 @@ class SpellCheckApi(object):
 
         Check if a sentence is spelled correctly  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_check_sentence_string(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_check_sentence_string(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input sentence word (required)
         :return: bool
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.spell_check_check_sentence_string_with_http_info(value, **kwargs)  # noqa: E501
         else:
             (data) = self.spell_check_check_sentence_string_with_http_info(value, **kwargs)  # noqa: E501
@@ -258,11 +258,11 @@ class SpellCheckApi(object):
 
         Check if a sentence is spelled correctly  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_check_sentence_string_with_http_info(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_check_sentence_string_with_http_info(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input sentence word (required)
         :return: bool
                  If the method is called asynchronously,
@@ -270,7 +270,7 @@ class SpellCheckApi(object):
         """
 
         all_params = ['value']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -324,7 +324,7 @@ class SpellCheckApi(object):
             files=local_var_files,
             response_type='bool',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -335,18 +335,18 @@ class SpellCheckApi(object):
 
         Find the spelling corrections for a word  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_correct(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_correct(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input word (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.spell_check_correct_with_http_info(value, **kwargs)  # noqa: E501
         else:
             (data) = self.spell_check_correct_with_http_info(value, **kwargs)  # noqa: E501
@@ -357,11 +357,11 @@ class SpellCheckApi(object):
 
         Find the spelling corrections for a word  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_correct_with_http_info(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_correct_with_http_info(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input word (required)
         :return: str
                  If the method is called asynchronously,
@@ -369,7 +369,7 @@ class SpellCheckApi(object):
         """
 
         all_params = ['value']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -423,7 +423,7 @@ class SpellCheckApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -434,18 +434,18 @@ class SpellCheckApi(object):
 
         Find spelling correction suggestions and return result as JSON  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_correct_json(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_correct_json(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input string (required)
         :return: CorrectJsonResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.spell_check_correct_json_with_http_info(value, **kwargs)  # noqa: E501
         else:
             (data) = self.spell_check_correct_json_with_http_info(value, **kwargs)  # noqa: E501
@@ -456,11 +456,11 @@ class SpellCheckApi(object):
 
         Find spelling correction suggestions and return result as JSON  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_correct_json_with_http_info(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_correct_json_with_http_info(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input string (required)
         :return: CorrectJsonResponse
                  If the method is called asynchronously,
@@ -468,7 +468,7 @@ class SpellCheckApi(object):
         """
 
         all_params = ['value']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -522,7 +522,7 @@ class SpellCheckApi(object):
             files=local_var_files,
             response_type='CorrectJsonResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -533,18 +533,18 @@ class SpellCheckApi(object):
 
         Check if a word is spelled correctly  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_post(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_post(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input string word (required)
         :return: bool
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_req'):
             return self.spell_check_post_with_http_info(value, **kwargs)  # noqa: E501
         else:
             (data) = self.spell_check_post_with_http_info(value, **kwargs)  # noqa: E501
@@ -555,11 +555,11 @@ class SpellCheckApi(object):
 
         Check if a word is spelled correctly  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.spell_check_post_with_http_info(value, async=True)
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.spell_check_post_with_http_info(value, async_req=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param async_req bool
         :param str value: Input string word (required)
         :return: bool
                  If the method is called asynchronously,
@@ -567,7 +567,7 @@ class SpellCheckApi(object):
         """
 
         all_params = ['value']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -621,7 +621,7 @@ class SpellCheckApi(object):
             files=local_var_files,
             response_type='bool',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),

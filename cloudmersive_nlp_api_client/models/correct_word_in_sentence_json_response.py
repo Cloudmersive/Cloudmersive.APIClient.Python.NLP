@@ -149,6 +149,9 @@ class CorrectWordInSentenceJsonResponse(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(CorrectWordInSentenceJsonResponse, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 
