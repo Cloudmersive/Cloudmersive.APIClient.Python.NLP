@@ -3,7 +3,7 @@
 """
     nlpapi
 
-    The powerful Natural Language Processing APIs let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
+    
 
     OpenAPI spec version: v1
     
@@ -14,13 +14,16 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "cloudmersive_nlp_api_client"
-VERSION = "2.0.1"
+VERSION = "2.0.2"
 # To install the library, run the following
 #
 # python setup.py install
 #
 # prerequisite: setuptools
-# http://pypi.python.org/pypi/setuptools
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 REQUIRES = [
     "certifi>=2017.4.17",
@@ -35,12 +38,13 @@ setup(
     version=VERSION,
     description="nlpapi",
     author_email="",
-    url="",
+    url="https://www.cloudmersive.com/nlp-api",
     keywords=["Swagger", "nlpapi"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
-    long_description="""\
-    The powerful Natural Language Processing APIs let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
-    """
+    long_description=long_description,
+    long_description_content_type='text/markdown'
+    
+
 )
