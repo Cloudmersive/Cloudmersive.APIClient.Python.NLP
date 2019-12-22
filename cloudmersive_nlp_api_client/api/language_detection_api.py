@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    nlpapi
+    nlpapiv2
 
-    The powerful Natural Language Processing APIs let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
+    The powerful Natural Language Processing APIs (v2) let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
 
     OpenAPI spec version: v1
     
@@ -33,45 +33,45 @@ class LanguageDetectionApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def language_detection_post(self, text_to_detect, **kwargs):  # noqa: E501
+    def language_detection_get_language(self, input, **kwargs):  # noqa: E501
         """Detect language of text  # noqa: E501
 
         Automatically determine which language a text string is written in.  Supports Danish (DAN), German (DEU), English (ENG), French (FRA), Italian (ITA), Japanese (JPN), Korean (KOR), Dutch (NLD), Norwegian (NOR), Portuguese (POR), Russian (RUS), Spanish (SPA), Swedish (SWE), Chinese (ZHO).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.language_detection_post(text_to_detect, async_req=True)
+        >>> thread = api.language_detection_get_language(input, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str text_to_detect: Text to detect language of (required)
+        :param LanguageDetectionRequest input: (required)
         :return: LanguageDetectionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.language_detection_post_with_http_info(text_to_detect, **kwargs)  # noqa: E501
+            return self.language_detection_get_language_with_http_info(input, **kwargs)  # noqa: E501
         else:
-            (data) = self.language_detection_post_with_http_info(text_to_detect, **kwargs)  # noqa: E501
+            (data) = self.language_detection_get_language_with_http_info(input, **kwargs)  # noqa: E501
             return data
 
-    def language_detection_post_with_http_info(self, text_to_detect, **kwargs):  # noqa: E501
+    def language_detection_get_language_with_http_info(self, input, **kwargs):  # noqa: E501
         """Detect language of text  # noqa: E501
 
         Automatically determine which language a text string is written in.  Supports Danish (DAN), German (DEU), English (ENG), French (FRA), Italian (ITA), Japanese (JPN), Korean (KOR), Dutch (NLD), Norwegian (NOR), Portuguese (POR), Russian (RUS), Spanish (SPA), Swedish (SWE), Chinese (ZHO).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.language_detection_post_with_http_info(text_to_detect, async_req=True)
+        >>> thread = api.language_detection_get_language_with_http_info(input, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str text_to_detect: Text to detect language of (required)
+        :param LanguageDetectionRequest input: (required)
         :return: LanguageDetectionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['text_to_detect']  # noqa: E501
+        all_params = ['input']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -82,14 +82,14 @@ class LanguageDetectionApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method language_detection_post" % key
+                    " to method language_detection_get_language" % key
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'text_to_detect' is set
-        if ('text_to_detect' not in params or
-                params['text_to_detect'] is None):
-            raise ValueError("Missing the required parameter `text_to_detect` when calling `language_detection_post`")  # noqa: E501
+        # verify the required parameter 'input' is set
+        if ('input' not in params or
+                params['input'] is None):
+            raise ValueError("Missing the required parameter `input` when calling `language_detection_get_language`")  # noqa: E501
 
         collection_formats = {}
 
@@ -103,8 +103,8 @@ class LanguageDetectionApi(object):
         local_var_files = {}
 
         body_params = None
-        if 'text_to_detect' in params:
-            body_params = params['text_to_detect']
+        if 'input' in params:
+            body_params = params['input']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json', 'text/json', 'application/xml', 'text/xml'])  # noqa: E501
@@ -117,7 +117,7 @@ class LanguageDetectionApi(object):
         auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
-            '/nlp/language/detect', 'POST',
+            '/nlp-v2/language/detect', 'POST',
             path_params,
             query_params,
             header_params,

@@ -3,11 +3,9 @@ from __future__ import absolute_import
 # flake8: noqa
 
 # import apis into api package
-from cloudmersive_nlp_api_client.api.extract_entities_string_api import ExtractEntitiesStringApi
+from cloudmersive_nlp_api_client.api.extract_entities_api import ExtractEntitiesApi
 from cloudmersive_nlp_api_client.api.language_detection_api import LanguageDetectionApi
-from cloudmersive_nlp_api_client.api.parse_string_api import ParseStringApi
-from cloudmersive_nlp_api_client.api.pos_tagger_json_api import PosTaggerJsonApi
-from cloudmersive_nlp_api_client.api.pos_tagger_string_api import PosTaggerStringApi
-from cloudmersive_nlp_api_client.api.sentences_api import SentencesApi
-from cloudmersive_nlp_api_client.api.spell_check_api import SpellCheckApi
-from cloudmersive_nlp_api_client.api.words_api import WordsApi
+from cloudmersive_nlp_api_client.api.parse_api import ParseApi
+from cloudmersive_nlp_api_client.api.pos_tagger_api import PosTaggerApi
+from cloudmersive_nlp_api_client.api.segmentation_api import SegmentationApi
+from cloudmersive_nlp_api_client.api.spellcheck_api import SpellcheckApi

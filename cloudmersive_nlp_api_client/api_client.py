@@ -1,8 +1,8 @@
 # coding: utf-8
 """
-    nlpapi
+    nlpapiv2
 
-    The powerful Natural Language Processing APIs let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
+    The powerful Natural Language Processing APIs (v2) let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
 
     OpenAPI spec version: v1
     
@@ -74,7 +74,7 @@ class ApiClient(object):
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'Swagger-Codegen/2.0.2/python'
+        self.user_agent = 'Swagger-Codegen/3.0.1/python'
 
     def __del__(self):
         if self._pool is not None:

@@ -2,9 +2,9 @@
 
 # flake8: noqa
 """
-    nlpapi
+    nlpapiv2
 
-    The powerful Natural Language Processing APIs let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
+    The powerful Natural Language Processing APIs (v2) let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
 
     OpenAPI spec version: v1
     
@@ -15,14 +15,24 @@
 from __future__ import absolute_import
 
 # import models into model package
-from cloudmersive_nlp_api_client.models.check_json_response import CheckJsonResponse
-from cloudmersive_nlp_api_client.models.check_sentence_json_response import CheckSentenceJsonResponse
-from cloudmersive_nlp_api_client.models.correct_json_response import CorrectJsonResponse
-from cloudmersive_nlp_api_client.models.correct_word_in_sentence_json_response import CorrectWordInSentenceJsonResponse
-from cloudmersive_nlp_api_client.models.get_words_json_response import GetWordsJsonResponse
+from cloudmersive_nlp_api_client.models.check_sentence_request import CheckSentenceRequest
+from cloudmersive_nlp_api_client.models.check_sentence_response import CheckSentenceResponse
+from cloudmersive_nlp_api_client.models.check_word_request import CheckWordRequest
+from cloudmersive_nlp_api_client.models.check_word_response import CheckWordResponse
+from cloudmersive_nlp_api_client.models.correct_word_in_sentence import CorrectWordInSentence
+from cloudmersive_nlp_api_client.models.entity import Entity
+from cloudmersive_nlp_api_client.models.extract_entities_request import ExtractEntitiesRequest
+from cloudmersive_nlp_api_client.models.extract_entities_response import ExtractEntitiesResponse
+from cloudmersive_nlp_api_client.models.get_words_request import GetWordsRequest
+from cloudmersive_nlp_api_client.models.get_words_response import GetWordsResponse
+from cloudmersive_nlp_api_client.models.language_detection_request import LanguageDetectionRequest
 from cloudmersive_nlp_api_client.models.language_detection_response import LanguageDetectionResponse
+from cloudmersive_nlp_api_client.models.parse_request import ParseRequest
+from cloudmersive_nlp_api_client.models.parse_response import ParseResponse
 from cloudmersive_nlp_api_client.models.pos_request import PosRequest
 from cloudmersive_nlp_api_client.models.pos_response import PosResponse
 from cloudmersive_nlp_api_client.models.pos_sentence import PosSentence
 from cloudmersive_nlp_api_client.models.pos_tagged_word import PosTaggedWord
+from cloudmersive_nlp_api_client.models.sentence_segmentation_request import SentenceSegmentationRequest
+from cloudmersive_nlp_api_client.models.sentence_segmentation_response import SentenceSegmentationResponse
 from cloudmersive_nlp_api_client.models.word_position import WordPosition

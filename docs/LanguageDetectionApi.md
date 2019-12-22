@@ -4,11 +4,11 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**language_detection_post**](LanguageDetectionApi.md#language_detection_post) | **POST** /nlp/language/detect | Detect language of text
+[**language_detection_get_language**](LanguageDetectionApi.md#language_detection_get_language) | **POST** /nlp-v2/language/detect | Detect language of text
 
 
-# **language_detection_post**
-> LanguageDetectionResponse language_detection_post(text_to_detect)
+# **language_detection_get_language**
+> LanguageDetectionResponse language_detection_get_language(input)
 
 Detect language of text
 
@@ -30,21 +30,21 @@ configuration.api_key['Apikey'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = cloudmersive_nlp_api_client.LanguageDetectionApi(cloudmersive_nlp_api_client.ApiClient(configuration))
-text_to_detect = 'text_to_detect_example' # str | Text to detect language of
+input = cloudmersive_nlp_api_client.LanguageDetectionRequest() # LanguageDetectionRequest | 
 
 try:
     # Detect language of text
-    api_response = api_instance.language_detection_post(text_to_detect)
+    api_response = api_instance.language_detection_get_language(input)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling LanguageDetectionApi->language_detection_post: %s\n" % e)
+    print("Exception when calling LanguageDetectionApi->language_detection_get_language: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **text_to_detect** | **str**| Text to detect language of | 
+ **input** | [**LanguageDetectionRequest**](LanguageDetectionRequest.md)|  | 
 
 ### Return type
 

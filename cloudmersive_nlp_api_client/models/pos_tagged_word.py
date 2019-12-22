@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    nlpapi
+    nlpapiv2
 
-    The powerful Natural Language Processing APIs let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
+    The powerful Natural Language Processing APIs (v2) let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
 
     OpenAPI spec version: v1
     

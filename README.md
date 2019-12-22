@@ -1,10 +1,10 @@
 # cloudmersive_nlp_api_client
-The powerful Natural Language Processing APIs let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.
+The powerful Natural Language Processing APIs (v2) let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.
 
 This Python package provides a native API client for [Cloudmersive NLP](https://www.cloudmersive.com/nlp-api)
 
 - API version: v1
-- Package version: 2.0.2
+- Package version: 3.0.1
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -58,15 +58,15 @@ configuration.api_key['Apikey'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['Apikey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = cloudmersive_nlp_api_client.ExtractEntitiesStringApi(cloudmersive_nlp_api_client.ApiClient(configuration))
-value = 'value_example' # str | Input string
+api_instance = cloudmersive_nlp_api_client.ExtractEntitiesApi(cloudmersive_nlp_api_client.ApiClient(configuration))
+value = cloudmersive_nlp_api_client.ExtractEntitiesRequest() # ExtractEntitiesRequest | Input string
 
 try:
     # Extract entities from string
-    api_response = api_instance.extract_entities_string_post(value)
+    api_response = api_instance.extract_entities_post(value)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ExtractEntitiesStringApi->extract_entities_string_post: %s\n" % e)
+    print("Exception when calling ExtractEntitiesApi->extract_entities_post: %s\n" % e)
 
 ```
 
@@ -76,40 +76,43 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ExtractEntitiesStringApi* | [**extract_entities_string_post**](docs/ExtractEntitiesStringApi.md#extract_entities_string_post) | **POST** /nlp/ExtractEntitiesString | Extract entities from string
-*LanguageDetectionApi* | [**language_detection_post**](docs/LanguageDetectionApi.md#language_detection_post) | **POST** /nlp/language/detect | Detect language of text
-*ParseStringApi* | [**parse_string_post**](docs/ParseStringApi.md#parse_string_post) | **POST** /nlp/ParseString | Parse string to syntax tree
-*PosTaggerJsonApi* | [**pos_tagger_json_post**](docs/PosTaggerJsonApi.md#pos_tagger_json_post) | **POST** /nlp/PosTaggerJson | Part-of-speech tag a string
-*PosTaggerStringApi* | [**pos_tagger_string_post**](docs/PosTaggerStringApi.md#pos_tagger_string_post) | **POST** /nlp/PosTaggerString | Part-of-speech tag a string
-*SentencesApi* | [**sentences_post**](docs/SentencesApi.md#sentences_post) | **POST** /nlp/get/sentences/string | Extract sentences from string
-*SpellCheckApi* | [**spell_check_check_json**](docs/SpellCheckApi.md#spell_check_check_json) | **POST** /nlp/spellcheck/check/word/json | Spell check word
-*SpellCheckApi* | [**spell_check_check_sentence_json**](docs/SpellCheckApi.md#spell_check_check_sentence_json) | **POST** /nlp/spellcheck/check/sentence/json | Check if sentence is spelled correctly
-*SpellCheckApi* | [**spell_check_check_sentence_string**](docs/SpellCheckApi.md#spell_check_check_sentence_string) | **POST** /nlp/spellcheck/check/sentence/string | Spell check a sentence
-*SpellCheckApi* | [**spell_check_correct**](docs/SpellCheckApi.md#spell_check_correct) | **POST** /nlp/spellcheck/correct/word/string | Find spelling corrections
-*SpellCheckApi* | [**spell_check_correct_json**](docs/SpellCheckApi.md#spell_check_correct_json) | **POST** /nlp/spellcheck/correct/word/json | Find spelling corrections
-*SpellCheckApi* | [**spell_check_post**](docs/SpellCheckApi.md#spell_check_post) | **POST** /nlp/spellcheck/check/word/string | Spell check a word
-*WordsApi* | [**words_adjectives**](docs/WordsApi.md#words_adjectives) | **POST** /nlp/get/words/adjectives/string | Get adjectives in string
-*WordsApi* | [**words_adverbs**](docs/WordsApi.md#words_adverbs) | **POST** /nlp/get/words/adverbs/string | Get adverbs in input string
-*WordsApi* | [**words_get_words_json**](docs/WordsApi.md#words_get_words_json) | **POST** /nlp/get/words/json | Get words in input string (JSON)
-*WordsApi* | [**words_get_words_string**](docs/WordsApi.md#words_get_words_string) | **POST** /nlp/get/words/string | Get words from string
-*WordsApi* | [**words_nouns**](docs/WordsApi.md#words_nouns) | **POST** /nlp/get/words/nouns/string | Get nouns in string
-*WordsApi* | [**words_post**](docs/WordsApi.md#words_post) | **POST** /nlp/get/words/verbs/string | Get the verbs in a string
-*WordsApi* | [**words_pronouns**](docs/WordsApi.md#words_pronouns) | **POST** /nlp/get/words/pronouns/string | Returns all pronounts in string
-*WordsApi* | [**words_proper_nouns**](docs/WordsApi.md#words_proper_nouns) | **POST** /nlp/get/words/properNouns/string | Get proper nouns in a string
+*ExtractEntitiesApi* | [**extract_entities_post**](docs/ExtractEntitiesApi.md#extract_entities_post) | **POST** /nlp-v2/extract-entities | Extract entities from string
+*LanguageDetectionApi* | [**language_detection_get_language**](docs/LanguageDetectionApi.md#language_detection_get_language) | **POST** /nlp-v2/language/detect | Detect language of text
+*ParseApi* | [**parse_parse_string**](docs/ParseApi.md#parse_parse_string) | **POST** /nlp/parse/tree | Parse string to syntax tree
+*PosTaggerApi* | [**pos_tagger_tag_adjectives**](docs/PosTaggerApi.md#pos_tagger_tag_adjectives) | **POST** /nlp-v2/pos/tag/adjectives | Part-of-speech tag a string, filter to adjectives
+*PosTaggerApi* | [**pos_tagger_tag_adverbs**](docs/PosTaggerApi.md#pos_tagger_tag_adverbs) | **POST** /nlp-v2/pos/tag/adverbs | Part-of-speech tag a string, filter to adverbs
+*PosTaggerApi* | [**pos_tagger_tag_nouns**](docs/PosTaggerApi.md#pos_tagger_tag_nouns) | **POST** /nlp-v2/pos/tag/nouns | Part-of-speech tag a string, filter to nouns
+*PosTaggerApi* | [**pos_tagger_tag_pronouns**](docs/PosTaggerApi.md#pos_tagger_tag_pronouns) | **POST** /nlp-v2/pos/tag/pronouns | Part-of-speech tag a string, filter to pronouns
+*PosTaggerApi* | [**pos_tagger_tag_sentence**](docs/PosTaggerApi.md#pos_tagger_tag_sentence) | **POST** /nlp-v2/pos/tag/sentence | Part-of-speech tag a string
+*PosTaggerApi* | [**pos_tagger_tag_verbs**](docs/PosTaggerApi.md#pos_tagger_tag_verbs) | **POST** /nlp-v2/pos/tag/verbs | Part-of-speech tag a string, filter to verbs
+*SegmentationApi* | [**segmentation_get_sentences**](docs/SegmentationApi.md#segmentation_get_sentences) | **POST** /nlp-v2/segmentation/sentences | Extract sentences from string
+*SegmentationApi* | [**segmentation_get_words**](docs/SegmentationApi.md#segmentation_get_words) | **POST** /nlp-v2/segmentation/words | Get words in input string
+*SpellcheckApi* | [**spellcheck_check_sentence**](docs/SpellcheckApi.md#spellcheck_check_sentence) | **POST** /nlp-v2/spellcheck/check/sentence | Check if sentence is spelled correctly
+*SpellcheckApi* | [**spellcheck_correct_json**](docs/SpellcheckApi.md#spellcheck_correct_json) | **POST** /nlp-v2/spellcheck/check/word | Find spelling corrections
 
 
 ## Documentation For Models
 
- - [CheckJsonResponse](docs/CheckJsonResponse.md)
- - [CheckSentenceJsonResponse](docs/CheckSentenceJsonResponse.md)
- - [CorrectJsonResponse](docs/CorrectJsonResponse.md)
- - [CorrectWordInSentenceJsonResponse](docs/CorrectWordInSentenceJsonResponse.md)
- - [GetWordsJsonResponse](docs/GetWordsJsonResponse.md)
+ - [CheckSentenceRequest](docs/CheckSentenceRequest.md)
+ - [CheckSentenceResponse](docs/CheckSentenceResponse.md)
+ - [CheckWordRequest](docs/CheckWordRequest.md)
+ - [CheckWordResponse](docs/CheckWordResponse.md)
+ - [CorrectWordInSentence](docs/CorrectWordInSentence.md)
+ - [Entity](docs/Entity.md)
+ - [ExtractEntitiesRequest](docs/ExtractEntitiesRequest.md)
+ - [ExtractEntitiesResponse](docs/ExtractEntitiesResponse.md)
+ - [GetWordsRequest](docs/GetWordsRequest.md)
+ - [GetWordsResponse](docs/GetWordsResponse.md)
+ - [LanguageDetectionRequest](docs/LanguageDetectionRequest.md)
  - [LanguageDetectionResponse](docs/LanguageDetectionResponse.md)
+ - [ParseRequest](docs/ParseRequest.md)
+ - [ParseResponse](docs/ParseResponse.md)
  - [PosRequest](docs/PosRequest.md)
  - [PosResponse](docs/PosResponse.md)
  - [PosSentence](docs/PosSentence.md)
  - [PosTaggedWord](docs/PosTaggedWord.md)
+ - [SentenceSegmentationRequest](docs/SentenceSegmentationRequest.md)
+ - [SentenceSegmentationResponse](docs/SentenceSegmentationResponse.md)
  - [WordPosition](docs/WordPosition.md)
 
 
