@@ -3,7 +3,7 @@
 """
     nlpapiv2
 
-    The powerful Natural Language Processing APIs (v2) let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
+    
 
     OpenAPI spec version: v1
     
@@ -14,7 +14,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "cloudmersive_nlp_api_client"
-VERSION = "3.0.1"
+VERSION = "3.0.2"
 # To install the library, run the following
 #
 # python setup.py install
@@ -45,6 +45,6 @@ setup(
     include_package_data=True,
     long_description=long_description,
     long_description_content_type='text/markdown'
-    The powerful Natural Language Processing APIs (v2) let you perform part of speech tagging, entity identification, sentence parsing, and much more to help you understand the meaning of unstructured text.  # noqa: E501
+    
 
 )

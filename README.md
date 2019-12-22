@@ -4,7 +4,7 @@ The powerful Natural Language Processing APIs (v2) let you perform part of speec
 This Python package provides a native API client for [Cloudmersive NLP](https://www.cloudmersive.com/nlp-api)
 
 - API version: v1
-- Package version: 3.0.1
+- Package version: 3.0.2
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
