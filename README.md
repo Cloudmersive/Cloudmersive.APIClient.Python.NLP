@@ -4,7 +4,7 @@ The powerful Natural Language Processing APIs (v2) let you perform part of speec
 This Python package provides a native API client for [Cloudmersive NLP](https://www.cloudmersive.com/nlp-api)
 
 - API version: v1
-- Package version: 3.0.2
+- Package version: 3.0.3
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -78,7 +78,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *ExtractEntitiesApi* | [**extract_entities_post**](docs/ExtractEntitiesApi.md#extract_entities_post) | **POST** /nlp-v2/extract-entities | Extract entities from string
 *LanguageDetectionApi* | [**language_detection_get_language**](docs/LanguageDetectionApi.md#language_detection_get_language) | **POST** /nlp-v2/language/detect | Detect language of text
-*ParseApi* | [**parse_parse_string**](docs/ParseApi.md#parse_parse_string) | **POST** /nlp/parse/tree | Parse string to syntax tree
+*ParseApi* | [**parse_parse_string**](docs/ParseApi.md#parse_parse_string) | **POST** /nlp-v2/parse/tree | Parse string to syntax tree
 *PosTaggerApi* | [**pos_tagger_tag_adjectives**](docs/PosTaggerApi.md#pos_tagger_tag_adjectives) | **POST** /nlp-v2/pos/tag/adjectives | Part-of-speech tag a string, filter to adjectives
 *PosTaggerApi* | [**pos_tagger_tag_adverbs**](docs/PosTaggerApi.md#pos_tagger_tag_adverbs) | **POST** /nlp-v2/pos/tag/adverbs | Part-of-speech tag a string, filter to adverbs
 *PosTaggerApi* | [**pos_tagger_tag_nouns**](docs/PosTaggerApi.md#pos_tagger_tag_nouns) | **POST** /nlp-v2/pos/tag/nouns | Part-of-speech tag a string, filter to nouns

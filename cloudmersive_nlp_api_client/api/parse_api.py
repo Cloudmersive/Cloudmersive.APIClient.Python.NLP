@@ -117,7 +117,7 @@ class ParseApi(object):
         auth_settings = ['Apikey']  # noqa: E501
 
         return self.api_client.call_api(
-            '/nlp/parse/tree', 'POST',
+            '/nlp-v2/parse/tree', 'POST',
             path_params,
             query_params,
             header_params,
