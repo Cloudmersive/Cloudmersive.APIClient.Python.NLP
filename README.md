@@ -4,7 +4,7 @@ The powerful Natural Language Processing APIs (v2) let you perform part of speec
 This Python package provides a native API client for [Cloudmersive NLP](https://www.cloudmersive.com/nlp-api)
 
 - API version: v1
-- Package version: 3.0.3
+- Package version: 3.0.4
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -78,6 +78,8 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *ExtractEntitiesApi* | [**extract_entities_post**](docs/ExtractEntitiesApi.md#extract_entities_post) | **POST** /nlp-v2/extract-entities | Extract entities from string
 *LanguageDetectionApi* | [**language_detection_get_language**](docs/LanguageDetectionApi.md#language_detection_get_language) | **POST** /nlp-v2/language/detect | Detect language of text
+*LanguageTranslationApi* | [**language_translation_translate_deu_to_eng**](docs/LanguageTranslationApi.md#language_translation_translate_deu_to_eng) | **POST** /nlp-v2/translate/language/deu/to/eng | Translate German to English text with Deep Learning AI
+*LanguageTranslationApi* | [**language_translation_translate_eng_to_deu**](docs/LanguageTranslationApi.md#language_translation_translate_eng_to_deu) | **POST** /nlp-v2/translate/language/eng/to/deu | Translate English to German text with Deep Learning AI
 *ParseApi* | [**parse_parse_string**](docs/ParseApi.md#parse_parse_string) | **POST** /nlp-v2/parse/tree | Parse string to syntax tree
 *PosTaggerApi* | [**pos_tagger_tag_adjectives**](docs/PosTaggerApi.md#pos_tagger_tag_adjectives) | **POST** /nlp-v2/pos/tag/adjectives | Part-of-speech tag a string, filter to adjectives
 *PosTaggerApi* | [**pos_tagger_tag_adverbs**](docs/PosTaggerApi.md#pos_tagger_tag_adverbs) | **POST** /nlp-v2/pos/tag/adverbs | Part-of-speech tag a string, filter to adverbs
@@ -85,6 +87,7 @@ Class | Method | HTTP request | Description
 *PosTaggerApi* | [**pos_tagger_tag_pronouns**](docs/PosTaggerApi.md#pos_tagger_tag_pronouns) | **POST** /nlp-v2/pos/tag/pronouns | Part-of-speech tag a string, filter to pronouns
 *PosTaggerApi* | [**pos_tagger_tag_sentence**](docs/PosTaggerApi.md#pos_tagger_tag_sentence) | **POST** /nlp-v2/pos/tag/sentence | Part-of-speech tag a string
 *PosTaggerApi* | [**pos_tagger_tag_verbs**](docs/PosTaggerApi.md#pos_tagger_tag_verbs) | **POST** /nlp-v2/pos/tag/verbs | Part-of-speech tag a string, filter to verbs
+*RephraseApi* | [**rephrase_translate_deu_to_eng**](docs/RephraseApi.md#rephrase_translate_deu_to_eng) | **POST** /nlp-v2/rephrase/rephrase/eng/by-sentence | Rephrase, paraphrase English text sentence-by-sentence using Deep Learning AI
 *SegmentationApi* | [**segmentation_get_sentences**](docs/SegmentationApi.md#segmentation_get_sentences) | **POST** /nlp-v2/segmentation/sentences | Extract sentences from string
 *SegmentationApi* | [**segmentation_get_words**](docs/SegmentationApi.md#segmentation_get_words) | **POST** /nlp-v2/segmentation/words | Get words in input string
 *SpellcheckApi* | [**spellcheck_check_sentence**](docs/SpellcheckApi.md#spellcheck_check_sentence) | **POST** /nlp-v2/spellcheck/check/sentence | Check if sentence is spelled correctly
@@ -105,12 +108,18 @@ Class | Method | HTTP request | Description
  - [GetWordsResponse](docs/GetWordsResponse.md)
  - [LanguageDetectionRequest](docs/LanguageDetectionRequest.md)
  - [LanguageDetectionResponse](docs/LanguageDetectionResponse.md)
+ - [LanguageTranslationRequest](docs/LanguageTranslationRequest.md)
+ - [LanguageTranslationResponse](docs/LanguageTranslationResponse.md)
  - [ParseRequest](docs/ParseRequest.md)
  - [ParseResponse](docs/ParseResponse.md)
  - [PosRequest](docs/PosRequest.md)
  - [PosResponse](docs/PosResponse.md)
  - [PosSentence](docs/PosSentence.md)
  - [PosTaggedWord](docs/PosTaggedWord.md)
+ - [RephraseRequest](docs/RephraseRequest.md)
+ - [RephraseResponse](docs/RephraseResponse.md)
+ - [RephrasedSentence](docs/RephrasedSentence.md)
+ - [RephrasedSentenceOption](docs/RephrasedSentenceOption.md)
  - [SentenceSegmentationRequest](docs/SentenceSegmentationRequest.md)
  - [SentenceSegmentationResponse](docs/SentenceSegmentationResponse.md)
  - [WordPosition](docs/WordPosition.md)
