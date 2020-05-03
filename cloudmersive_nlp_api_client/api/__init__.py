@@ -3,6 +3,7 @@ from __future__ import absolute_import
 # flake8: noqa
 
 # import apis into api package
+from cloudmersive_nlp_api_client.api.analytics_api import AnalyticsApi
 from cloudmersive_nlp_api_client.api.extract_entities_api import ExtractEntitiesApi
 from cloudmersive_nlp_api_client.api.language_detection_api import LanguageDetectionApi
 from cloudmersive_nlp_api_client.api.language_translation_api import LanguageTranslationApi

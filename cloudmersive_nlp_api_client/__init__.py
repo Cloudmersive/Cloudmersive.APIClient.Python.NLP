@@ -16,6 +16,7 @@
 from __future__ import absolute_import
 
 # import apis into sdk package
+from cloudmersive_nlp_api_client.api.analytics_api import AnalyticsApi
 from cloudmersive_nlp_api_client.api.extract_entities_api import ExtractEntitiesApi
 from cloudmersive_nlp_api_client.api.language_detection_api import LanguageDetectionApi
 from cloudmersive_nlp_api_client.api.language_translation_api import LanguageTranslationApi
@@ -55,4 +56,6 @@ from cloudmersive_nlp_api_client.models.rephrased_sentence import RephrasedSente
 from cloudmersive_nlp_api_client.models.rephrased_sentence_option import RephrasedSentenceOption
 from cloudmersive_nlp_api_client.models.sentence_segmentation_request import SentenceSegmentationRequest
 from cloudmersive_nlp_api_client.models.sentence_segmentation_response import SentenceSegmentationResponse
+from cloudmersive_nlp_api_client.models.sentiment_analysis_request import SentimentAnalysisRequest
+from cloudmersive_nlp_api_client.models.sentiment_analysis_response import SentimentAnalysisResponse
 from cloudmersive_nlp_api_client.models.word_position import WordPosition

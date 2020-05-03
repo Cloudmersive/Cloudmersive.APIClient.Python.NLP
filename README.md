@@ -4,7 +4,7 @@ The powerful Natural Language Processing APIs (v2) let you perform part of speec
 This Python package provides a native API client for [Cloudmersive NLP](https://www.cloudmersive.com/nlp-api)
 
 - API version: v1
-- Package version: 3.0.5
+- Package version: 3.0.6
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -58,15 +58,15 @@ configuration.api_key['Apikey'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['Apikey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = cloudmersive_nlp_api_client.ExtractEntitiesApi(cloudmersive_nlp_api_client.ApiClient(configuration))
-value = cloudmersive_nlp_api_client.ExtractEntitiesRequest() # ExtractEntitiesRequest | Input string
+api_instance = cloudmersive_nlp_api_client.AnalyticsApi(cloudmersive_nlp_api_client.ApiClient(configuration))
+input = cloudmersive_nlp_api_client.SentimentAnalysisRequest() # SentimentAnalysisRequest | Input sentiment analysis request
 
 try:
-    # Extract entities from string
-    api_response = api_instance.extract_entities_post(value)
+    # Perform Sentiment Analysis and Classification on Text
+    api_response = api_instance.analytics_sentiment(input)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ExtractEntitiesApi->extract_entities_post: %s\n" % e)
+    print("Exception when calling AnalyticsApi->analytics_sentiment: %s\n" % e)
 
 ```
 
@@ -76,6 +76,7 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*AnalyticsApi* | [**analytics_sentiment**](docs/AnalyticsApi.md#analytics_sentiment) | **POST** /nlp-v2/analytics/sentiment | Perform Sentiment Analysis and Classification on Text
 *ExtractEntitiesApi* | [**extract_entities_post**](docs/ExtractEntitiesApi.md#extract_entities_post) | **POST** /nlp-v2/extract-entities | Extract entities from string
 *LanguageDetectionApi* | [**language_detection_get_language**](docs/LanguageDetectionApi.md#language_detection_get_language) | **POST** /nlp-v2/language/detect | Detect language of text
 *LanguageTranslationApi* | [**language_translation_translate_deu_to_eng**](docs/LanguageTranslationApi.md#language_translation_translate_deu_to_eng) | **POST** /nlp-v2/translate/language/deu/to/eng | Translate German to English text with Deep Learning AI
@@ -124,6 +125,8 @@ Class | Method | HTTP request | Description
  - [RephrasedSentenceOption](docs/RephrasedSentenceOption.md)
  - [SentenceSegmentationRequest](docs/SentenceSegmentationRequest.md)
  - [SentenceSegmentationResponse](docs/SentenceSegmentationResponse.md)
+ - [SentimentAnalysisRequest](docs/SentimentAnalysisRequest.md)
+ - [SentimentAnalysisResponse](docs/SentimentAnalysisResponse.md)
  - [WordPosition](docs/WordPosition.md)
 
 
