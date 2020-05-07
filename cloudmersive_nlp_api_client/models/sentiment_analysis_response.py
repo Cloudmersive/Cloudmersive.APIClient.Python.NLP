@@ -66,7 +66,7 @@ class SentimentAnalysisResponse(object):
     def successful(self):
         """Gets the successful of this SentimentAnalysisResponse.  # noqa: E501
 
-        True if the language detection operation was successful, false otherwise  # noqa: E501
+        True if the sentiment analysis operation was successful, false otherwise  # noqa: E501
 
         :return: The successful of this SentimentAnalysisResponse.  # noqa: E501
         :rtype: bool
@@ -77,7 +77,7 @@ class SentimentAnalysisResponse(object):
     def successful(self, successful):
         """Sets the successful of this SentimentAnalysisResponse.
 
-        True if the language detection operation was successful, false otherwise  # noqa: E501
+        True if the sentiment analysis operation was successful, false otherwise  # noqa: E501
 
         :param successful: The successful of this SentimentAnalysisResponse.  # noqa: E501
         :type: bool

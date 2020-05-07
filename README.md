@@ -4,7 +4,7 @@ The powerful Natural Language Processing APIs (v2) let you perform part of speec
 This Python package provides a native API client for [Cloudmersive NLP](https://www.cloudmersive.com/nlp-api)
 
 - API version: v1
-- Package version: 3.0.6
+- Package version: 3.0.7
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -59,14 +59,14 @@ configuration.api_key['Apikey'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = cloudmersive_nlp_api_client.AnalyticsApi(cloudmersive_nlp_api_client.ApiClient(configuration))
-input = cloudmersive_nlp_api_client.SentimentAnalysisRequest() # SentimentAnalysisRequest | Input sentiment analysis request
+input = cloudmersive_nlp_api_client.ProfanityAnalysisRequest() # ProfanityAnalysisRequest | Input profanity analysis request
 
 try:
-    # Perform Sentiment Analysis and Classification on Text
-    api_response = api_instance.analytics_sentiment(input)
+    # Perform Profanity and Obscene Language Analysis and Detection on Text
+    api_response = api_instance.analytics_profanity(input)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling AnalyticsApi->analytics_sentiment: %s\n" % e)
+    print("Exception when calling AnalyticsApi->analytics_profanity: %s\n" % e)
 
 ```
 
@@ -76,6 +76,7 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*AnalyticsApi* | [**analytics_profanity**](docs/AnalyticsApi.md#analytics_profanity) | **POST** /nlp-v2/analytics/profanity | Perform Profanity and Obscene Language Analysis and Detection on Text
 *AnalyticsApi* | [**analytics_sentiment**](docs/AnalyticsApi.md#analytics_sentiment) | **POST** /nlp-v2/analytics/sentiment | Perform Sentiment Analysis and Classification on Text
 *ExtractEntitiesApi* | [**extract_entities_post**](docs/ExtractEntitiesApi.md#extract_entities_post) | **POST** /nlp-v2/extract-entities | Extract entities from string
 *LanguageDetectionApi* | [**language_detection_get_language**](docs/LanguageDetectionApi.md#language_detection_get_language) | **POST** /nlp-v2/language/detect | Detect language of text
@@ -119,6 +120,8 @@ Class | Method | HTTP request | Description
  - [PosResponse](docs/PosResponse.md)
  - [PosSentence](docs/PosSentence.md)
  - [PosTaggedWord](docs/PosTaggedWord.md)
+ - [ProfanityAnalysisRequest](docs/ProfanityAnalysisRequest.md)
+ - [ProfanityAnalysisResponse](docs/ProfanityAnalysisResponse.md)
  - [RephraseRequest](docs/RephraseRequest.md)
  - [RephraseResponse](docs/RephraseResponse.md)
  - [RephrasedSentence](docs/RephrasedSentence.md)
