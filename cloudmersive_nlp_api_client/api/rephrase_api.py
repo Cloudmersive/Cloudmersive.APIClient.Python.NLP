@@ -33,13 +33,13 @@ class RephraseApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def rephrase_translate_deu_to_eng(self, input, **kwargs):  # noqa: E501
+    def rephrase_english_rephrase_sentence_by_sentence(self, input, **kwargs):  # noqa: E501
         """Rephrase, paraphrase English text sentence-by-sentence using Deep Learning AI  # noqa: E501
 
         Automatically rephrases or paraphrases input text in English sentence by sentence using advanced Deep Learning and Neural NLP.  Creates multiple reprhasing candidates per input sentence, from 1 to 10 possible rephrasings of the original sentence.  Seeks to preserve original semantic meaning in rephrased output candidates.  Consumes 1-2 API calls per output rephrasing option generated, per sentence.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.rephrase_translate_deu_to_eng(input, async_req=True)
+        >>> thread = api.rephrase_english_rephrase_sentence_by_sentence(input, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -50,18 +50,18 @@ class RephraseApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.rephrase_translate_deu_to_eng_with_http_info(input, **kwargs)  # noqa: E501
+            return self.rephrase_english_rephrase_sentence_by_sentence_with_http_info(input, **kwargs)  # noqa: E501
         else:
-            (data) = self.rephrase_translate_deu_to_eng_with_http_info(input, **kwargs)  # noqa: E501
+            (data) = self.rephrase_english_rephrase_sentence_by_sentence_with_http_info(input, **kwargs)  # noqa: E501
             return data
 
-    def rephrase_translate_deu_to_eng_with_http_info(self, input, **kwargs):  # noqa: E501
+    def rephrase_english_rephrase_sentence_by_sentence_with_http_info(self, input, **kwargs):  # noqa: E501
         """Rephrase, paraphrase English text sentence-by-sentence using Deep Learning AI  # noqa: E501
 
         Automatically rephrases or paraphrases input text in English sentence by sentence using advanced Deep Learning and Neural NLP.  Creates multiple reprhasing candidates per input sentence, from 1 to 10 possible rephrasings of the original sentence.  Seeks to preserve original semantic meaning in rephrased output candidates.  Consumes 1-2 API calls per output rephrasing option generated, per sentence.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.rephrase_translate_deu_to_eng_with_http_info(input, async_req=True)
+        >>> thread = api.rephrase_english_rephrase_sentence_by_sentence_with_http_info(input, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -82,14 +82,14 @@ class RephraseApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method rephrase_translate_deu_to_eng" % key
+                    " to method rephrase_english_rephrase_sentence_by_sentence" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'input' is set
         if ('input' not in params or
                 params['input'] is None):
-            raise ValueError("Missing the required parameter `input` when calling `rephrase_translate_deu_to_eng`")  # noqa: E501
+            raise ValueError("Missing the required parameter `input` when calling `rephrase_english_rephrase_sentence_by_sentence`")  # noqa: E501
 
         collection_formats = {}
 

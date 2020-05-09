@@ -4,11 +4,11 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**rephrase_translate_deu_to_eng**](RephraseApi.md#rephrase_translate_deu_to_eng) | **POST** /nlp-v2/rephrase/rephrase/eng/by-sentence | Rephrase, paraphrase English text sentence-by-sentence using Deep Learning AI
+[**rephrase_english_rephrase_sentence_by_sentence**](RephraseApi.md#rephrase_english_rephrase_sentence_by_sentence) | **POST** /nlp-v2/rephrase/rephrase/eng/by-sentence | Rephrase, paraphrase English text sentence-by-sentence using Deep Learning AI
 
 
-# **rephrase_translate_deu_to_eng**
-> RephraseResponse rephrase_translate_deu_to_eng(input)
+# **rephrase_english_rephrase_sentence_by_sentence**
+> RephraseResponse rephrase_english_rephrase_sentence_by_sentence(input)
 
 Rephrase, paraphrase English text sentence-by-sentence using Deep Learning AI
 
@@ -34,10 +34,10 @@ input = cloudmersive_nlp_api_client.RephraseRequest() # RephraseRequest | Input 
 
 try:
     # Rephrase, paraphrase English text sentence-by-sentence using Deep Learning AI
-    api_response = api_instance.rephrase_translate_deu_to_eng(input)
+    api_response = api_instance.rephrase_english_rephrase_sentence_by_sentence(input)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RephraseApi->rephrase_translate_deu_to_eng: %s\n" % e)
+    print("Exception when calling RephraseApi->rephrase_english_rephrase_sentence_by_sentence: %s\n" % e)
 ```
 
 ### Parameters
