@@ -4,7 +4,7 @@ The powerful Natural Language Processing APIs (v2) let you perform part of speec
 This Python package provides a native API client for [Cloudmersive NLP](https://www.cloudmersive.com/nlp-api)
 
 - API version: v1
-- Package version: 3.0.8
+- Package version: 3.0.9
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -78,6 +78,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AnalyticsApi* | [**analytics_profanity**](docs/AnalyticsApi.md#analytics_profanity) | **POST** /nlp-v2/analytics/profanity | Perform Profanity and Obscene Language Analysis and Detection on Text
 *AnalyticsApi* | [**analytics_sentiment**](docs/AnalyticsApi.md#analytics_sentiment) | **POST** /nlp-v2/analytics/sentiment | Perform Sentiment Analysis and Classification on Text
+*AnalyticsApi* | [**analytics_similarity**](docs/AnalyticsApi.md#analytics_similarity) | **POST** /nlp-v2/analytics/similarity | Perform Semantic Similarity Comparison of Two Strings
 *AnalyticsApi* | [**analytics_subjectivity**](docs/AnalyticsApi.md#analytics_subjectivity) | **POST** /nlp-v2/analytics/subjectivity | Perform Subjectivity and Objectivity Analysis on Text
 *ExtractEntitiesApi* | [**extract_entities_post**](docs/ExtractEntitiesApi.md#extract_entities_post) | **POST** /nlp-v2/extract-entities | Extract entities from string
 *LanguageDetectionApi* | [**language_detection_get_language**](docs/LanguageDetectionApi.md#language_detection_get_language) | **POST** /nlp-v2/language/detect | Detect language of text
@@ -131,6 +132,8 @@ Class | Method | HTTP request | Description
  - [SentenceSegmentationResponse](docs/SentenceSegmentationResponse.md)
  - [SentimentAnalysisRequest](docs/SentimentAnalysisRequest.md)
  - [SentimentAnalysisResponse](docs/SentimentAnalysisResponse.md)
+ - [SimilarityAnalysisRequest](docs/SimilarityAnalysisRequest.md)
+ - [SimilarityAnalysisResponse](docs/SimilarityAnalysisResponse.md)
  - [SubjectivityAnalysisRequest](docs/SubjectivityAnalysisRequest.md)
  - [SubjectivityAnalysisResponse](docs/SubjectivityAnalysisResponse.md)
  - [WordPosition](docs/WordPosition.md)
