@@ -4,11 +4,66 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**analytics_hate_speech**](AnalyticsApi.md#analytics_hate_speech) | **POST** /nlp-v2/analytics/hate-speech | Perform Hate Speech Analysis and Detection on Text
 [**analytics_profanity**](AnalyticsApi.md#analytics_profanity) | **POST** /nlp-v2/analytics/profanity | Perform Profanity and Obscene Language Analysis and Detection on Text
 [**analytics_sentiment**](AnalyticsApi.md#analytics_sentiment) | **POST** /nlp-v2/analytics/sentiment | Perform Sentiment Analysis and Classification on Text
 [**analytics_similarity**](AnalyticsApi.md#analytics_similarity) | **POST** /nlp-v2/analytics/similarity | Perform Semantic Similarity Comparison of Two Strings
 [**analytics_subjectivity**](AnalyticsApi.md#analytics_subjectivity) | **POST** /nlp-v2/analytics/subjectivity | Perform Subjectivity and Objectivity Analysis on Text
 
+
+# **analytics_hate_speech**
+> HateSpeechAnalysisResponse analytics_hate_speech(input)
+
+Perform Hate Speech Analysis and Detection on Text
+
+Analyze input text using advanced Hate Speech Analysis to determine if the input contains hate speech language.  Supports English language input.  Consumes 1-2 API calls per sentence.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import cloudmersive_nlp_api_client
+from cloudmersive_nlp_api_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: Apikey
+configuration = cloudmersive_nlp_api_client.Configuration()
+configuration.api_key['Apikey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Apikey'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = cloudmersive_nlp_api_client.AnalyticsApi(cloudmersive_nlp_api_client.ApiClient(configuration))
+input = cloudmersive_nlp_api_client.HateSpeechAnalysisRequest() # HateSpeechAnalysisRequest | Input hate speech analysis request
+
+try:
+    # Perform Hate Speech Analysis and Detection on Text
+    api_response = api_instance.analytics_hate_speech(input)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AnalyticsApi->analytics_hate_speech: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **input** | [**HateSpeechAnalysisRequest**](HateSpeechAnalysisRequest.md)| Input hate speech analysis request | 
+
+### Return type
+
+[**HateSpeechAnalysisResponse**](HateSpeechAnalysisResponse.md)
+
+### Authorization
+
+[Apikey](../README.md#Apikey)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **analytics_profanity**
 > ProfanityAnalysisResponse analytics_profanity(input)
